@@ -6,26 +6,38 @@
     <title>About - SimpleCV</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
-        <h1>SimpleCV</h1>
+        <div onclick="location.href='#';">
+            <img src="assets/images/logo.svg" alt="SimpleCV">
+            <p>simple-cv</p>
+        </div>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Suggest Feature</li>
-                <li>Github</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Suggest Feature</a></li>
+                <li><a href="https://github.com/najmunda/simple-cv">Github</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="content">
-            <article id="about">
-                <h1>SimpleCV?</h1>
-                <p>SimpleCV is a simple web app for making a simple cv. SimpleCV use local storage to save your CV and CV "part", make your CV-making experience easier. SimpleCV is developed as media for my Web Development learning, my portofolio on Web Developing & for my job-seeking sake (yes I'll used it myself).</p>
+            <article id="about" draggable="true">
+                <div>
+                    <span class="material-symbols-outlined">dataset</span>
+                    <h1>SimpleCV?</h1>
+                </div>
+                <hr>
+                <p>SimpleCV is a simple web app for making a simple Curriculum Vitae. SimpleCV use "drag & drop" system to arrange item on CV, make your CV-making experience easier. SimpleCV is developed as media for my Web Development learning, my portofolio on Web Developing & for my job-seeking sake (yes, I'll used it myself).</p>
             </article>
-            <article id="features">
-                <h1>SimpleCV Feature</h1>
+            <article id="features" draggable="true">
+                <div>
+                    <span class="material-symbols-outlined">bolt</span>
+                    <h1>SimpleCV Feature</h1>
+                </div>
+                <hr>
                 <ul>
                     <li>Simple</li>
                     <p>Using a very simple CV so you dont waste your time on useless factor.</p>
@@ -35,50 +47,64 @@
                     <p>Copy-Paste is simple, but drag & drop is much simpler.</p>
                     <li>One-click export</li>
                     <p>Export your CV in just one click.</p>
-                    <li>Access on everywhere</li>
+                    <li>Access everywhere</li>
                     <p>Simpler interface faciliate you to make your CV on various screen size.</p>
+                    <li>Web reader</li>
+                    <p>With HTML technologies, people with visual impairment can make CV too!</p>
                     <li>Client-side App</li>
                     <p>Make CV without internet, also your information is lived only on your device.</p>
                 </ul>
             </article>
-            <article id="how-to">
-                <h1>How to use</h1>
+            <article id="how-to" draggable="true">
+                <div>
+                    <span class="material-symbols-outlined">psychology_alt</span>
+                    <h1 onClick="this.contentEditable='true';">How to use</h1>
+                </div>
+                <hr>
                 <ol>
                     <li>Fill your name and brief explaination</li>
-                    <p>Fill it on the beginning fields.</p>
+                    <p>Fill it on the beginning fields. If you already filled it, you also could change it. (try change this section title)</p>
                     <li>Make some CV section</li>
                     <p>Make section like "Educations" or "Experiences".</p>
                     <li>Fill it with some item</li>
                     <p>Fill your section with "item". An item will have 3 details: title, time-detail, and description.</p>
                     <li>Drag & Drop</li>
-                    <p>Drag & drop section/item you've made and arrange it with hope your CV will look best.</p>
+                    <p>Drag & drop section/item you've made and arrange it with hope your CV will look best. (try to move boxes on this page)</p>
                 </ol>
             </article>
-            <article id="contacts">
-                <h1>Any questions?</h1>
+            <article id="contacts" draggable="true">
+                <div>
+                    <span class="material-symbols-outlined">mail</span>
+                    <h1>Any questions?</h1>
+                </div>
+                <hr>
                 <p>For any question/discussion, knock my <a href="">X</a> or my <a href="">Github</a></p>
             </article>
-            <article id="license">
-                <h1>License</h1>
+            <article id="license" draggable="true">
+                <div>
+                    <span class="material-symbols-outlined">gavel</span>
+                    <h1>License</h1>
+                </div>
+                <hr>
                 <p>For any use of SimpleCV codes/assets, read <a href="">me</a>.</p>
             </article>
         </div>
         <aside>
             <article>
-                <img src="assets/images/profile.jpg" alt="SimpleCV logo">
-                <h2>SimpleCV by Najmunda</h2>
+                <img src="assets/images/logo.svg" alt="SimpleCV">
+                <h1>About</h1>
                 <ul>
                     <li><a href="#about">SimpleCV?</a></li>
-                    <li><a href="features">Features</a></li>
-                    <li><a href="how-to">How-to</a></li>
-                    <li><a href="contacts">Contacts</a></li>
-                    <li><a href="license">License</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-to">How-to</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li><a href="#license">License</a></li>
                 </ul>
             </article>
         </aside>
     </main>
     <footer>
-        <p>Dengan bangga dibuat sebagai submisi sebuah kursus di <a href="https://dicoding.com">Dicoding</a></p>
+        <p>This webpage is created for <a href="https://dicoding.com">Dicoding</a> course submission.</p>
     </footer>
 </body>
 </html>
