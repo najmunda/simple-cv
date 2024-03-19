@@ -83,6 +83,11 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
+/* Header menu button */
+header .menu-button {
+    display: none;
+}
+
 /* MAIN */
 
 main {
@@ -162,7 +167,8 @@ aside article {
 
 /* Logo on aside */
 aside img {
-    width: 60%;
+    width: 100%;
+    max-width: 100px;
 }
 
 /* Navigation on aside */
@@ -224,7 +230,7 @@ footer {
 
     aside article {
         flex-direction: column;
-        gap: 10px;
+        gap: 2px;
     }
 
     /* Logo on aside */
@@ -242,14 +248,37 @@ footer {
     }
 }
 
-/* Extra small devices (phones, 600px and down)
-@media only screen and (max-width: 600px) {...} */
+/* Small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        gap: 15px;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {...} */
+    header ul {
+        display: none;
+    }
 
-/* Large devices (laptops/desktops, 992px and up)
-@media only screen and (min-width: 992px) {...} */
+    header .menu-button {
+        display: inline;
+    }
 
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px) {...} */
+    main {
+        gap: 15px;
+    }
+
+    main .content {
+        gap: 15px;
+    }
+
+    aside ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Impossible width (220px and down) */
+@media only screen and (max-width: 220px) {
+    header, main, footer {
+        display: none;
+    }
+} 
