@@ -32,6 +32,9 @@ body {
 header {
     width: 100%;
 
+    position: sticky;
+    top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,8 +86,8 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-/* Header menu button */
-header .menu-button {
+/* Header menu button (on small screen) */
+span.menu-button, span.close-menu-button {
     display: none;
 }
 
@@ -149,7 +152,7 @@ aside {
     height: fit-content;
 
     position: sticky;
-    top: 30px;
+    top: 85px;
 }
 
 aside article {
@@ -207,6 +210,27 @@ footer {
     text-align: center;
 }
 
+/* NAV for 600px down */
+.nav-full {
+    width: 100%;
+
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #008DDA;
+
+    padding-inline: 25px;
+    padding-block: 10px;
+
+    position: absolute;
+    top: 53px;
+    left: 0;
+    z-index: 5;
+}
+
+.nav-full ul {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Device Breakpoints by W3Schools (https://www.w3schools.com/css/css_rwd_mediaqueries.asp) */
 
 /* Medium devices (768px and down) */
@@ -224,7 +248,7 @@ footer {
     aside {
         width: 100%;
 
-        position: relative;
+        position: unset;
         top: 0px;
     }
 
@@ -244,7 +268,7 @@ footer {
 
     aside ul {
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -254,7 +278,7 @@ footer {
         gap: 15px;
     }
 
-    header ul {
+    nav {
         display: none;
     }
 
